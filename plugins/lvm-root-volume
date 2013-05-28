@@ -16,6 +16,6 @@ insert_task_after "22-apt-upgrade" "$plugindir/lvm-root-volume-tasks/30-grub"
 remove_task "31-fstab"
 insert_task_after "30-grub" "$plugindir/lvm-root-volume-tasks/31-fstab"
 
-insert_task_before $TASK_UNMOUNT_VOLUME "72-unmount-boot"
+insert_task_before $TASK_UNMOUNT_VOLUME "$plugindir/lvm-root-volume-tasks/72-unmount-boot"
 remove_task $TASK_CREATE_AMI
 insert_task_after $TASK_DELETE_VOLUME "$plugindir/lvm-root-volume-tasks/95-register-ami"
