@@ -6,7 +6,6 @@ host_packages+=('lvm2')
 
 packages+=('sudo')
 packages+=('ruby')
-packages+=('libopenssl-ruby')
-packages+=('libxmlrpc-ruby')
+packages+=('libruby')
 packages+=('libshadow-ruby1.8')
 packages+=('rsync')
