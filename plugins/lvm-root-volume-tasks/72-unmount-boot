@@ -1,5 +1,3 @@
 #!/bin/bash
 # Unmount the boot partition
 umount $imagedir/boot
-
-vgchange -an vg_root
