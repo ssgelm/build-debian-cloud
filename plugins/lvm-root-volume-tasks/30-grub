@@ -15,4 +15,4 @@ chroot $imagedir update-grub
 # Alias grub.cfg as menu.lst
 chroot $imagedir ln -s /boot/grub/grub.cfg /boot/grub/menu.lst
 
-chroot $imagedir "cd /boot; ln -s . boot"
+chroot $imagedir ln -s . /boot/boot
