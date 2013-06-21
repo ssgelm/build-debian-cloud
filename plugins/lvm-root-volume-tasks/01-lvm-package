@@ -3,11 +3,3 @@ packages+=('parted')
 
 host_packages+=('lvm2')
 
-# Wrong place for these, but for now....
-
-packages+=('sudo')
-packages+=('ruby')
-packages+=('libruby')
-packages+=('libshadow-ruby1.8')
-packages+=('rsync')
-packages+=('less')
