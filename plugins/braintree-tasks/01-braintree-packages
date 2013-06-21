@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Add braintree packages
+packages+=('sudo')
+packages+=('ruby')
+packages+=('libruby')
+packages+=('libshadow-ruby1.8')
+packages+=('rsync')
+packages+=('less')
