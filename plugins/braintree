@@ -1,0 +1,2 @@
+#!/bin/bash
+insert_task_after $TASK_PACKAGES $plugindir/braintree-tasks/01-braintree-packages
