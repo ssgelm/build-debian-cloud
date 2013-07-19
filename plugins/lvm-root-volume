@@ -3,7 +3,7 @@
 # lvm-root-volume
 # Put the root volume on an LVM partition
 
-if $volume_size < 2
+if [ $volume_size -lt 2 ]
 then
   die "Disk must be at least 2 GB"
 fi
