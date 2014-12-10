@@ -4,40 +4,36 @@
 # Figure out which pvGrub kernel ID we need - make sure to use the hd00 kernel since we have partitioned the root disk...
 case $region in
 	us-east-1)
-		[ $arch = 'amd64' ] && aki="aki-b4aa75dd"
-		[ $arch = 'i386' ] && aki="aki-b2aa75db"
+		[ $arch = 'amd64' ] && aki="aki-499ccb20"
+		[ $arch = 'i386' ] && aki="aki-659ccb0c"
 	;;
 	us-west-1)
-		[ $arch = 'amd64' ] && aki="aki-eb7e26ae"
-		[ $arch = 'i386' ] && aki="aki-e97e26ac"
+		[ $arch = 'amd64' ] && aki="aki-920531d7"
+		[ $arch = 'i386' ] && aki="aki-960531d3"
 	;;
 	us-west-2)
-		[ $arch = 'amd64' ] && aki="aki-f837bac8"
-		[ $arch = 'i386' ] && aki="aki-f637bac6"
+		[ $arch = 'amd64' ] && aki="aki-e68f11d6"
+		[ $arch = 'i386' ] && aki="aki-e28f11d2"
 	;;
 	eu-west-1)
-		[ $arch = 'amd64' ] && aki="aki-8b655dff"
-		[ $arch = 'i386' ] && aki="aki-89655dfd"
+		[ $arch = 'amd64' ] && aki="aki-58a3452f"
+		[ $arch = 'i386' ] && aki="aki-5ea34529"
 	;;
 	ap-southeast-1)
-		[ $arch = 'amd64' ] && aki="aki-fa1354a8"
-		[ $arch = 'i386' ] && aki="aki-f41354a6"
+		[ $arch = 'amd64' ] && aki="aki-5e3e740c"
+		[ $arch = 'i386' ] && aki="aki-563e7404"
 	;;
 	ap-southeast-2)
-		[ $arch = 'amd64' ] && aki="aki-31990e0b"
-		[ $arch = 'i386' ] && aki="aki-33990e09"
+		[ $arch = 'amd64' ] && aki="aki-3b1d8001"
+		[ $arch = 'i386' ] && aki="aki-c162fffb"
 	;;
 	ap-northeast-1)
-		[ $arch = 'amd64' ] && aki="aki-40992841"
-		[ $arch = 'i386' ] && aki="aki-3e99283f"
+		[ $arch = 'amd64' ] && aki="aki-1f6bf51e"
+		[ $arch = 'i386' ] && aki="aki-196bf518"
 	;;
 	sa-east-1)
-		[ $arch = 'amd64' ] && aki="aki-c88f51d5"
-		[ $arch = 'i386' ] && aki="aki-ce8f51d3"
-	;;
-	us-gov-west-1)
-		[ $arch = 'amd64' ] && aki="aki-75a4c056"
-		[ $arch = 'i386' ] && aki="aki-77a4c054"
+		[ $arch = 'amd64' ] && aki="aki-5153f44c"
+		[ $arch = 'i386' ] && aki="aki-5753f44a"
 	;;
 	*) die "Unrecognized region:" "$region"
 esac
