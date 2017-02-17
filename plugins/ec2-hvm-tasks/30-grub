@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sed -i "s/^GRUB_TIMEOUT=1/GRUB_TIMEOUT=0\nGRUB_HIDDEN_TIMEOUT=true/" $imagedir/etc/default/grub
+
+# Install grub to the MBR
+chroot $imagedir grub-install $device_path
+
+# Update grub.cfg using the script
+chroot $imagedir update-grub
+
+chroot $imagedir ln -s . /boot/boot

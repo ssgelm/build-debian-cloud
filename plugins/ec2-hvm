@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# ec2-hvm
+# Create the ec2 ami as hvm instead of pv.  assumes lvm-root-volume is also included
+
+remove_task "30-grub"
+insert_task_after "22-apt-upgrade" "$plugindir/ec2-hvm-tasks/30-grub"
+
+remove_task $TASK_CREATE_AMI
+insert_task_after $TASK_DELETE_VOLUME "$plugindir/ec2-hvm-tasks/95-register-ami"
