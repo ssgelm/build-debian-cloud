@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Format the volume with a boot partition then the rest LVM
-sfdisk $device_path << EOF
-,20,L
+sfdisk -D $device_path << EOF
+,20,L,*
 ,,8e
 EOF
 
