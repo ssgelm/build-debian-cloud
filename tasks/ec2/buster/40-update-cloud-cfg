@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sed -i "s/disable_root: true/disable_root: false/" $imagedir/etc/cloud/cloud.cfg
+cat >> $imagedir/etc/cloud/cloud.cfg << EOF
+
+runcmd:
+ - [cloud-init-per, once, embiggen-root, /etc/init.d/expand-volume]
+EOF
